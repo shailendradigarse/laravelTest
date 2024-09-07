@@ -34,8 +34,8 @@
         <tbody>
             @forelse($invoices as $invoice)
                 <tr>
-                    <td><a href="{{ route('invoices.show', $invoice->id) }}">{{ $invoice->invoice_number }}</a></td>
-                    <td><a href="{{ route('customers.show', $invoice->customer->id) }}">{{ $invoice->customer->name }}</a></td>
+                    <td><a href="{{ route('invoices.show', $invoice->id) }}" target="_blank">{{ $invoice->invoice_number }}</a></td>
+                    <td><a href="{{ route('customers.show', $invoice->customer->id) }}" target="_blank">{{ $invoice->customer->name }}</a></td>
                     <td>{{ $invoice->invoice_date }}</td>
                     <td>{{ $invoice->amount }}</td>
                     <td>{{ $invoice->tax ?? '-' }}</td>

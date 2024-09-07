@@ -30,6 +30,13 @@ Install the PHP dependencies using Composer:
 ```bash
 composer install
 ```
+### 3. Install NODE Dependencies
+
+Install the node dependencies using Composer:
+
+```bash
+npm install
+```
 
 ### Configure Environment Variables
 
@@ -97,6 +104,12 @@ Open a new terminal and start the PHP development server:
 
 ```bash
 php artisan serve
+```
+**Start node dev**:
+Open a new terminal and start the node development server:
+
+```bash
+npm run dev
 ```
 
 The application will be accessible at http://127.0.0.1:8000 (or another port specified in the output).
